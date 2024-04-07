@@ -8,8 +8,42 @@ img {
 
 body {
     font-family: poppins, sans-serif;
+    margin: 0;
+    line-height: 1.4;
    
 }
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+ul a {
+    padding: 0 1em;
+    text-decoration: none;
+    color: #000;
+}
+
+#Sweetheart .wrapper {
+    display: grid;
+    
+}
+
+
 
 
 
