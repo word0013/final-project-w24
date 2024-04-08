@@ -10,38 +10,131 @@ body {
     font-family: poppins, sans-serif;
     margin: 0;
     line-height: 1.4;
-   
+    padding: 0 1.5em;  
+}
+
+h1 {
+    font-size: 2.027rem;
+}
+
+h2 {
+    font-size: 1.802rem;
 }
 
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    align-items: center;
+}
 
+#logo {
+    width: 240px;
+}
+
+header {
+    background-color: #fff;
+    text-align: center;
+    padding: 1em 2em;
+    color: #fff;
 }
 
 header div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    padding-top: 2em 0;
 }
 
-header ul {
+nav ul {
+    text-transform: uppercase;
     list-style: none;
     display: flex;
+    font-weight: 500;
 }
 
-ul a {
-    padding: 0 1em;
+nav ul li a:link, 
+nav ul li a:visited {
+    color: #000;
     text-decoration: none;
+    margin: 0 10px;
+}
+
+nav ul li a:hover, 
+nav ul li a:focus {
     color: #000;
 }
 
-#Sweetheart .wrapper {
-    display: grid;
-    
+.Sweetheart-text {
+    padding: 0 2em;
 }
+
+
+.sweetheart-title {
+    font-weight: 400;
+}
+
+.btn {
+    background-color: #000;
+    padding: 0.5em 1em;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.limited-edition {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#Sweetheart .intro-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding: 2em;
+    gap: 1.5em;
+    
+
+    grid-template-areas: 
+    "block1 block1 block1"
+    "block2 block3 block4"
+    ;   
+}
+
+.intro-images .block:nth-child(1) {
+    grid-area: block1;
+    border-radius: 8px;
+}
+
+.intro-images .block:nth-child(2) {
+    grid-area: block2;
+    border-radius: 8px;
+}
+
+.intro-images .block:nth-child(3) {
+    grid-area: block3;
+    border-radius: 8px;
+}
+
+.intro-images .block:nth-child(4) {
+    grid-area: block4;
+    border-radius: 8px;
+}
+
+
+.behind-the-dough {
+    text-align: center;
+    background-color: #f8fafc;
+}
+
+#behind-dough {
+    padding: 0 2em;
+}
+
+#reviews {
+    padding: 0 2em;
+}
+
+
+
 
 
 
