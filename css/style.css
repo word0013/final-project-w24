@@ -10,11 +10,11 @@ body {
     font-family: "Poppins", sans-serif;
     margin: 0;
     line-height: 1.4;
-    /* padding: 0 1.5em;   */
 }
 
 h1 {
     font-size: 2.027rem;
+    font-weight: 400;
 }
 
 h2 {
@@ -26,7 +26,7 @@ h2 {
     margin: 0 auto;
 }
 
-#logo {
+.logo {
     width: 240px;
 }
 
@@ -40,7 +40,7 @@ header div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 2em 0;
+    padding: 2em 0;
 }
 
 nav ul {
@@ -62,14 +62,15 @@ nav ul li a:focus {
     color: #000;
 }
 
-.Sweetheart-text {
+.sweetheart-text {
     padding: 2em;
-    
+      
 }
 
 
 .sweetheart-title {
     font-weight: 400;
+    padding: 0 1em;
 }
 
 .btn {
@@ -78,18 +79,20 @@ nav ul li a:focus {
     color: #fff;
     text-decoration: none;
     border-radius: 8px;
+    display: inline-block;
 }
 
 .limited-edition {
     text-transform: uppercase;
     font-weight: 700;
+    
 }
 
-#Sweetheart .intro-images {
+.intro-images {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    padding: 2em;
+    grid-template-columns: 3fr, 1fr;
+    grid-template-rows: 3fr, 1fr;
+    padding: 0 2em;
     gap: 1.5em;
     
 
@@ -99,22 +102,22 @@ nav ul li a:focus {
     ;   
 }
 
-.intro-images .block:nth-child(1) {
+.intro-images .block1:nth-child(1) {
     grid-area: block1;
     border-radius: 8px;
 }
 
-.intro-images .block:nth-child(2) {
+.intro-images .block2:nth-child(2) {
     grid-area: block2;
     border-radius: 8px;
 }
 
-.intro-images .block:nth-child(3) {
+.intro-images .block3:nth-child(3) {
     grid-area: block3;
     border-radius: 8px;
 }
 
-.intro-images .block:nth-child(4) {
+.intro-images .block4:nth-child(4) {
     grid-area: block4;
     border-radius: 8px;
 }
@@ -155,8 +158,8 @@ nav ul li a:focus {
 
 .pics {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 2, 1fr;
+    grid-template-rows: 2, 1fr;
     padding: 2em;
     gap: 1em;
     text-align: center;
@@ -180,8 +183,56 @@ footer {
     padding: 1em;
 }
 
-@media (min-width: 768px) {
-    
+@media (min-width: 768px) { 
+
+    .sweetheart,
+    .intro-images {
+        display: grid;
+        grid-template-columns: 3fr, 1fr;
+        /* grid-template-rows: 3fr, 1fr; */
+        gap: 1.5em;
+        grid-template-areas: 
+        "block1 block2"
+        "block3 block4"; 
+    }
+
+}
+
+@media  (min-width: 768px) {
+
+    .dough-paragraph {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
+
+    .quotes {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+
+    .pics {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+}
+
+@media (min-width: 960px) {
+    .intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h1 {
+        margin: 0;
+    }
+ 
+     .sweetheart-text {
+        padding: 0;
+
+    }
 }
 
 
