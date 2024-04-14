@@ -159,8 +159,8 @@ blockquote {
 
 .pics {
     display: grid;
-    grid-template-columns: 2, 1fr;
-    grid-template-rows: 2, 1fr;
+    grid-template-columns: 2fr, 1fr;
+    grid-template-rows: 2fr, 1fr;
     padding: 2em 0;
     gap: 1em;
     text-align: center;
@@ -188,9 +188,7 @@ footer {
 
     .sweetheart,
     .intro-images {
-        display: grid;
-        grid-template-columns: 3fr, 1fr;
-        gap: 1.5em;
+        
         grid-template-areas: 
         "block1 block2"
         "block3 block4"; 
